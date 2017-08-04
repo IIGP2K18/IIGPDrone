@@ -4,7 +4,8 @@ from flyt_python import api
 drone = api.navigation(timeout=120000)  # instance of flyt droneigation class
 
 # at least 3sec sleep time for the drone interface to initialize properly
-time.sleep(3)
+time.sleep(7)
+print"Drone ready"
 
 print 'taking off'
 drone.take_off(5.0)
