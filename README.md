@@ -1,1 +1,1 @@
-# IIGPDrone
+# Code for autonomous drone using pixhawk
