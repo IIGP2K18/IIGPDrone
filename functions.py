@@ -1,3 +1,6 @@
+import rospy
+from core_api.srv import *
+
 def get_global_namespace():
     rospy.wait_for_service('/get_global_namespace')
     try:
