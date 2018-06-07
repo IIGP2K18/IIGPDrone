@@ -17,7 +17,7 @@ def access_request(enable_access):
     except rospy.ServiceException, e:
         rospy.logerr("service call failed %s", e)
 
-def arm()
+def arm():
     rospy.wait_for_service('/<namespace>/navigation/arm')
     try:
         handle = rospy.ServiceProxy('/<namespace>/navigation/arm', Arm)
