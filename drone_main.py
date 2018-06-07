@@ -11,7 +11,7 @@ def get_global_namespace():
         rospy.logerr("global namespace service not available", e)
         return None
 
-def access_request(enable_access)
+def access_request(enable_access):
     rospy.wait_for_service('/<namespace>/navigation/access_request')
     try:
         handle = rospy.ServiceProxy('/<namespace>/navigation/access_request', AccessRequest)
