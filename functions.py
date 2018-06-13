@@ -18,7 +18,7 @@ def access_request(enable_access):
         resp = handle(enable_access=enable_access)
         return resp
     except rospy.ServiceException, e:
-        rospy.logerr("service call failed %s", e)
+	rospy.logerr("service call failed %s", e)
 
 def arm():
     rospy.wait_for_service('/flytos/navigation/arm')
